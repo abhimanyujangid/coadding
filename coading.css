@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Nevigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgba(14, 13, 14, 0.411);
+    height: 14vh;
+}
+ 
+
+/*  Nevigation Bar: logo imange */
+
+#logo{
+margin:15px 15px;
+}
+
+#logo img{
+    margin:12px 19px;
+    height: 57px;
+}
+/*  Nevigation Bar:list style */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+ list-style: none;
+ font-size: 15px;
+}
+
+#navbar ul li a{
+    padding: 15px 3px;
+    text-decoration: none;
+    font-family: 'Baloo Paaji 2', cursive;
+    border-radius: 20px;
+    color: white;
+    padding:12px;
+
+   }
+
+   #navbar ul li a:hover{
+       color: black;
+       background-color: blanchedalmond;
+  }
+
+  /* Home section */
+
+  #home{
+      display: flex;
+      flex-direction: column;
+      padding: 3px 200px;
+      justify-content: center;
+      align-items: center;
+      height:618px;
+    }
+
+  #home::before{
+      content:" ";
+      position: absolute;
+      background-image: url('../language/bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.89;
+  }
+
+  #home h1{
+      color: white;
+      text-align: center;
+      font-family: 'Baloo Bhai 2', cursive;
+  }
+
+  #home p{
+    color: white;
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+  }  
+
+  /*coading language section */
+     #Coading_Language{
+         margin: 34px;
+         display: flex;
+     }
+
+     #Coading_Language  .box{
+        border: 2px solid brown;
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 45px;
+        background-color: rgb(206 243 232);
+    }
+    #Coading_Language  .box img{
+        height: 156px;
+        margin: auto;
+        display: block;
+    }
+
+    #Coading_Language  .box p{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: bold;
+    }
+    
+
+    /* company section */
+    #company-section{
+        height: 344px;
+
+    }
+
+    #company-section::before{
+        content:" ";
+        position: absolute;
+        background-image: url('../language/bg\ company.jpg');
+        background-size: cover;
+        height: 55%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+
+    }
+
+    #company{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #company img{
+        height:107px;
+    }
+
+    .company-item{
+        padding: 40px;
+    }
+
+    /* contact section */
+    #contact{
+        position: relative;
+
+    }
+
+    #contact::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 0.7;
+        background-image: url('../language/contact.jpg');
+        background-size: cover ;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #contact-box{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+
+    }
+
+
+     #contact-box textarea{
+        width: 97%;
+         padding: 0.5rem;
+         border-radius: 10px;
+         font-size: 1.2rem;
+         font-weight: bold;
+     }
+
+     #contact-box h3{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+     }
+     .button {
+        padding: 16px 32px;
+        font-size: 12px; 
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #4CAF50;
+      }
+      
+      .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 9PX 20PX;
+    }
+
+
+/* utility class*/
+#firstline{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+ 
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 27px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.h-third{
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+ .center{
+     text-align: center;
+ }
+
+@media  screen and (max-width:360px) {
+    /*  Nevigation Bar: */
+    #navbar {
+        display: flex;
+        align-items: center;
+        background-color: rgba(14, 13, 14, 0.411);
+        height: 27vh;
+        flex-direction: column;
+    }
+     /* Home section */
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 6px 23px;
+        justify-content: center;
+        align-items: center;
+        height: 630px;
+    }
+    #home p {
+        color: white;
+        font-family: 'Style Script', cursive;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* Coading_Language */
+    #Coading_Language {
+        margin: 34px;
+        display: flex;
+        flex-direction: column;
+    }
+    #Coading_Language .box {
+        border: 2px solid brown;
+        padding: 10px;
+        margin:26px 36px;
+        border-radius: 45px;
+        background-color: rgb(206 243 232);
+    }
+    /* utility class*/
+    .h-primary {
+        font-size: 1.8rem;
+        padding: 10px;
+        font-family: 'Baloo Paaji 2', cursive;
+    }
+    .h-secondary {
+        font-size: 1.8rem;
+        padding: 27px;
+        font-family: 'Baloo Paaji 2', cursive;
+    }
+    /* company section */
+    #company {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #company img {
+        height: 48px;
+    }
+    #contact-box {
+        display: none;
+    }
+ 
+}
+
+
+   
